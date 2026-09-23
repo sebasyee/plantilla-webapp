@@ -1,19 +1,76 @@
-# React + TypeScript + Vite
+# Plantilla WebApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Plantilla base para crear landing pages y proyectos front-end con React, TypeScript, Vite y Tailwind CSS.
 
-Currently, two official plugins are available:
+## Tecnologías
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Oxlint
 
-## React Compiler
+## Requisitos
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Node.js 18 o superior
+- npm
 
-## Expanding the Oxlint configuration
+## Instalación
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+```bash
+npm install
+```
+
+## Ejecutar en desarrollo
+
+```bash
+npm run dev
+```
+
+## Compilar para producción
+
+```bash
+npm run build
+```
+
+## Previsualizar la build
+
+```bash
+npm run preview
+```
+
+## Crear un proyecto nuevo desde esta plantilla
+
+### 1. Crear el repositorio desde la plantilla
+
+1. Ve a la página del repositorio en GitHub.
+2. Haz clic en "Use this template".
+3. Selecciona "Create a new repository".
+4. Asigna un nombre para tu proyecto, por ejemplo: `landing-zapateria`.
+5. Haz clic en "Create repository".
+
+### 2. Clonar el repositorio
+
+```bash
+git clone https://github.com/TU_USUARIO/landing-zapateria.git
+cd landing-zapateria
+```
+
+### 3. Instalar dependencias
+
+```bash
+npm install
+```
+
+### 4. Iniciar el proyecto
+
+```bash
+npm run dev
+```
+
+## Configuración de lint
+
+Si quieres habilitar reglas más estrictas para producción, puedes ampliar la configuración de Oxlint editando `.oxlintrc.json`:
 
 ```json
 {
@@ -24,41 +81,14 @@ If you are developing a production application, we recommend enabling type-aware
   },
   "rules": {
     "react/rules-of-hooks": "error",
-
-
     "react/only-export-components": ["warn", { "allowConstantExport": true }]
   }
 }
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Documentación adicional
 
-Cómo utilizar la plantilla para un proyecto nuevo
-Cuando quieras crear una Landing Page (u otro proyecto) nuev0 desde GitHub:
-
-Paso 3.1: Crear el nuevo repositorio desde la plantilla
-Ve a tu repositorio plantilla-webapp en GitHub.
-
-Haz clic en el botón "Use this template" y selecciona "Create a new repository".
-
-Ponle el nombre de tu cliente o producto (por ejemplo: landing-zapateria).
-
-Haz clic en "Create repository".
-
-GitHub creará un repositorio nuevo, totalmente independiente y sin el historial de commits anterior.
-
-Paso 3.2: Clonar y empezar a trabajar en tu computadora
-Abre tu terminal en la carpeta de proyectos y descarga tu nuevo proyecto:
-
-Bash
-# 1. Clonar el nuevo repositorio
-git clone https://github.com/TU_USUARIO/landing-zapateria.git
-
-# 2. Entrar a la carpeta del nuevo proyecto
-cd landing-zapateria
-
-# 3. Instalar las dependencias (ya que node_modules no se subió)
-npm install
-
-# 4. Probar que todo encienda
-npm run dev
+- [Vite](https://vite.dev/)
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Oxlint](https://oxc.rs/docs/guide/usage/linter/rules)
